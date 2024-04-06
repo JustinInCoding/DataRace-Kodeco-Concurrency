@@ -39,7 +39,7 @@ struct ContentView: View {
     let queue = DispatchQueue(label: "notMain")
     queue.async {
       for _ in 1 ... 10 {
-        Thread.sleep(forTimeInterval: Double.random(in: 0.1..<0.5))
+//        Thread.sleep(forTimeInterval: Double.random(in: 0.1..<0.5))
         counter += 1
       }
       print(">>> notMain Queue counter = \(counter)")
